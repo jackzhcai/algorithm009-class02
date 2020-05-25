@@ -1,4 +1,8 @@
 /**
+ * @description 641. 设计循环双端队列
+ * @description 未实现
+ */
+/**
  * Initialize your data structure here. Set the size of the deque to be k.
  * @param {number} k
  */

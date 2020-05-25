@@ -1,4 +1,5 @@
 /**
+ * @description 42. 接雨水
  * @param {number[]} height
  * @return {number}
  */

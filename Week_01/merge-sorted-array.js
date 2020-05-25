@@ -1,4 +1,5 @@
 /**
+ * @description 88. 合并两个有序数组
  * @param {number[]} nums1
  * @param {number} m
  * @param {number[]} nums2
