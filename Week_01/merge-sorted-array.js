@@ -6,12 +6,13 @@
  * @return {void} Do not return anything, modify nums1 in-place instead.
  */
 var merge = function(nums1, m, nums2, n) {
-  let length = m + n
+  var len = m + n
   while(n > 0) {
-    if(m <= 0) {
-      nums1[--length] = nums2[--n]
+    if (m <= 0) {
+      nums1[--len] = nums2[--n]
       continue
     }
-    nums1[--length] = (nums1[m-1] >= nums2[n-1]) ? nums1[--m]: nums2[--n]
+    // 从后侧开始比较两个数组值，把较大值移到后面
+    nums1[--len] = (nums1[m - 1] > nums2[n - 1]) ? nums1[--m] : nums2[--n]
   }
 };
