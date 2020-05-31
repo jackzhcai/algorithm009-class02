@@ -12,7 +12,7 @@ var plusOne = function(digits) {
       digits[i] = 0
     }
   }
-  digits = Array.apply(null, {length: digits.length + 1}).map(() => 0)
+  digits[digits.length] = 0
   digits[0] = 1
   return digits
 };
