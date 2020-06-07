@@ -6,9 +6,9 @@
  * @param {number} n
  * @return {void} Do not return anything, modify nums1 in-place instead.
  */
-var merge = function(nums1, m, nums2, n) {
+var merge = function (nums1, m, nums2, n) {
   var len = m + n
-  while(n > 0) {
+  while (n > 0) {
     if (m <= 0) {
       nums1[--len] = nums2[--n]
       continue
