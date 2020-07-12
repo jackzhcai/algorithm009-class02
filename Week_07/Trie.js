@@ -24,7 +24,7 @@ Trie.prototype.insert = function (word) {
         if (!node.next[word[i]]) {
             node.next[word[i]] = new TrieNode()
         }
-        node = node.next
+        node = node.next[word[i]]
     }
     node.isEnd = true
     return true
